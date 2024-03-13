@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 선택자</title>
+    <style>
+        h1 {
+            font-size: 2.5;
+            color: aquamarine;
+
+        }
+        section {
+            padding: 10px;
+            bottom: 5px solid orange;
+
+        }
+
+        /* :first-of-type
+            - 첫 요소를 선택
+        */
+        section:first-of-type { color: #cc2232;}
+
+        /* :last-of-type - 마지막 요소를 선택*/
+        /* ::first-letter - 첫 글자를 선택 */
+        section:last-of-type::first-letter {
+            font-size: 2.4;
+            float: left;
+            padding: 0 2px;
+            margin: -1px 3px 0 0;
+            font-weight: bold;
+            color: orange;
+        }
+        section em {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        /* :before - 요소가 시작되기 전을 선택 */
+        section em::before {
+            content: "\"";
+            padding-right: 0.5em;
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* :after - 요소가 끝난 다음을 선택 */
+        section em:after {
+            content: "\"";
+            padding-left: 0.5em;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* :enabled - 활성화된 태그를 선택 */
+        input:enabled { background-color: aqua;}
+        /* :disabled - 비활성화된 태그를 선택 */
+        input:disabled { background-color: gray;}
+        input::placeholder{color: white}
+    </style>
+</head>
+<body>
+    <h1>가상 선택자</h1>
+    <section>
+        모든 국민은 거주·이전의 자유를 가진다. 법률은 특별한 규정이 없는 한 공포한 날로부터 20일을 경과함으로써 효력을 발생한다. 국무총리·국무위원 또는 정부위원은 국회나 그 위원회에 출석하여 국정처리상황을 보고하거나 의견을 진술하고 질문에 응답할 수 있다. 누구든지 체포 또는 구속을 당한 때에는 즉시 변호인의 조력을 받을 권리를 가진다. 다만, 형사피고인이 스스로 변호인을 구할 수 없을 때에는 법률이 정하는 바에 의하여 국가가 변호인을 붙인다.
+    </section>
+    <section>
+        <em>오늘이 가장 빛나는 날이라면 - 브로콜리너마저</em>
+        모든 국민은 거주·이전의 자유를 가진다. 법률은 특별한 규정이 없는 한 공포한 날로부터 20일을 경과함으로써 효력을 발생한다. 국무총리·국무위원 또는 정부위원은 국회나 그 위원회에 출석하여 국정처리상황을 보고하거나 의견을 진술하고 질문에 응답할 수 있다. 누구든지 체포 또는 구속을 당한 때에는 즉시 변호인의 조력을 받을 권리를 가진다. 다만, 형사피고인이 스스로 변호인을 구할 수 없을 때에는 법률이 정하는 바에 의하여 국가가 변호인을 붙인다.
+    </section>
+    <section>
+        모든 국민은 거주·이전의 자유를 가진다. 법률은 특별한 규정이 없는 한 공포한 날로부터 20일을 경과함으로써 효력을 발생한다. 국무총리·국무위원 또는 정부위원은 국회나 그 위원회에 출석하여 국정처리상황을 보고하거나 의견을 진술하고 질문에 응답할 수 있다. 누구든지 체포 또는 구속을 당한 때에는 즉시 변호인의 조력을 받을 권리를 가진다. 다만, 형사피고인이 스스로 변호인을 구할 수 없을 때에는 법률이 정하는 바에 의하여 국가가 변호인을 붙인다.
+    </section>
+
+    <form action="">
+        <p>
+            <label for="">이름</label>
+            <input type="text">
+        </p>
+        <p>
+            <label for="">이메일</label>
+            <input type="text" placeholder="sample@mail.com" disabled>
+        </p>
+    </form>
+</body>
+</html>

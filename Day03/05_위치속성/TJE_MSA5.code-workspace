@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "TJE_MSA5",
+			"path": "../../../vsgit/TJE_MSA5"
+		},
+		{
+			"name": "WEB",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"codetogether.virtualCursorJoin": "ownVirtualCursor",
+		"liveServer.settings.multiRootWorkspaceName": "WEB",
+		"liveServer.settings.port": 5501
+	}
+}

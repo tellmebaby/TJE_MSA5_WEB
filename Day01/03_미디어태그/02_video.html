@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video - 동영상을 재생하는 태그</title>
+</head>
+<body>
+    <!-- 
+        ▪ HTML5 에서 비디오를 재생할 수 있는 태그
+
+▪ 속성
+▪ autoplay, controls, loop, poster, preload,
+muted, src, volume, width, height
+
+▪ 비디오 파일 형식
+▪ mp4, WebM, ogg
+▪ 브라우저 마다 지원되는 파일 형식이 다르다.
+▪ → <source> : 여러 가지 비디오 파일 형식을 동시에 제공
+     -->
+    <h1>비디오 태그</h1>
+    <video src="video/video.mp4" autoplay controls width="1024" height="768"></video>
+
+    <h1>확장자 호환</h1>
+    <video width="1024" height="768">
+        <source src="video/video.mp4" type="video/mp4">
+        <source src="video/video.ogg" type="video/ogg">
+        <source src="video/video.webm" type="video/webm">
+    </video>
+
+    <h1>썸네일</h1>
+    <video src="video//video.mp4" autoplay controls width="1024" height="768" poster="img/poster.png"></video>
+     
+</body>
+</html>

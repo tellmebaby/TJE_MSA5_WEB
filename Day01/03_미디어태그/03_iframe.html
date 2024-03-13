@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe - 외부 페이지를 표시하는 태그</title>
+</head>
+<body>
+    <!-- 
+        ▪ 페이지 내부에 다른 웹 페이지를 표시하는 태그
+        ▪ iframe ( Inline Frame )
+
+        ▪ 속성
+        ▪ src, width, height
+
+        : 웹 페이지 안에서 다른 웹 페이지를 표시하는 태그
+
+        - name 속성을 지정하면target
+
+     -->
+
+     <h3>내부 페이지 및 외부 페이지 표시하기</h3>
+     <iframe src="03_inner.html" width="400" height="240"></iframe>
+     <iframe src="https://www.tcpschool.com" width="400" height="240"></iframe>
+
+     <hr>
+
+     <h3>target 프레임으로 표시하기</h3>
+     <iframe src="" name="frame1" width="400" height="240"></iframe>
+
+     <p>
+        <a href="http://typingclub.com" target="frame1">
+            영타사이트
+        </a>
+        
+     </p>
+
+     <iframe src="" name="frame2" width="400" height="240"></iframe>
+
+     <p>
+        <a href="http://hancomtyping.com" target="frame2">
+            한타사이트
+        </a>
+     </p>
+
+     <h3>youtube 동영상 표시하기</h3>
+
+
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/NIgBbxkG8SY?si=k4_fUNu8PN1vMIIn" 
+     title="YouTube video player" frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+
+      
+     <div style="height: 500px;"></div>
+</body>
+</html>
