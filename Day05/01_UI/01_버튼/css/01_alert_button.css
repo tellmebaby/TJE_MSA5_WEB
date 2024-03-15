@@ -1,0 +1,47 @@
+
+* { box-sizing: border-box;}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.btn {
+    border: none;
+    padding: 14px 28px;
+    cursor : pointer;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.success { background-color: lightslategray; }
+.success:hover { background-color: rgb(48, 63, 78); }
+.success:active { background-color: rgb(174, 205, 236); }
+
+.info { background-color: rgb(119, 136, 153); }
+.info:hover { background-color: rgb(35, 46, 56); }
+.info:active { background-color: rgb(170, 198, 226); }
+
+.warning { background-color: rgb(119, 153, 153); }
+.warning:hover { background-color: rgb(38, 53, 53); }
+.warning:active { background-color: rgb(162, 223, 223); }
+
+.danger { background-color: rgb(119, 153, 129); }
+.danger:hover { background-color: rgb(33, 46, 37); }
+.danger:active { background-color: rgb(161, 228, 181); }
+
+.default { background-color: rgb(125, 153, 119); color: rgb(54, 58, 63);}
+.default:hover { background-color: rgb(33, 41, 31); color: rgb(111, 117, 126);}
+.default:active { background-color: rgb(178, 228, 167); color: rgb(87, 91, 97);}
+
+.btn.lg {
+    display: block;
+    width: 30%;
+    margin: 10px 0px;
+}
+
+.btn {
+    border-radius: 12px;
+}
