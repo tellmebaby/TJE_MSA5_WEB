@@ -1,13 +1,13 @@
 .slide-container {
     width: 1200px;
-    height: 480px;
+    height: 600px;
     margin: 150px auto;
 }
 
 
 .slide {
     width: auto;
-    height: 480px;
+    height: 600px;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -89,6 +89,7 @@
     width: 10px;
     height: 10px;
     background-color: sandybrown;
+    border-radius: 50%;
 }
 /* 현재 닷츠 */
 .slick-dots li.slick-active button::before { background-color: orange; }

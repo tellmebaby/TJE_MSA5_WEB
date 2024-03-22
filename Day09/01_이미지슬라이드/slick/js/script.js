@@ -1,10 +1,4 @@
 // 문서 준비 이벤트
-$(function() {
-
-    // 슬릭 슬라이드 시작!
-    $('.slide-container').slick()
-
-})
 
 $(function() {
 
@@ -20,7 +14,7 @@ $(function() {
 
         // centerMode: true,            // 센터 모드
         // centerPadding: '60px',       // 센터 모드 시, 내부여백
-        slidesToShow: 1,                // 보여질 슬라이드 개수
+        slidesToShow: 2,                // 보여질 슬라이드 개수
         slidesToScroll: 1,              // 스크롤될 슬라이드 개수
 
         pauseOnDotsHover: true,         // 페이지네이션 호버 시 자동재생 멈춤
